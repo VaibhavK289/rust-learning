@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello World");
+    let apples: i32 = 50;
+    println!("{}", apples);
 }
