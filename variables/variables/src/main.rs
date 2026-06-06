@@ -38,7 +38,15 @@
 //
 
 const TAX_RATE: f64 = 7.25;
+type Meters = i32;
 fn main() {
     let income: i32 = 10000;
     println!("My income is {income} and my tax rate is {TAX_RATE}");
+
+    let mile_race_length: Meters = 1600;
+    let two_mile_race_length: Meters = 3200;
+
+    println!(
+        "A one mile race is {mile_race_length} meters long and a two mile race is {two_mile_race_length} meters long"
+    );
 }
