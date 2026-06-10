@@ -8,4 +8,6 @@ fn main() {
     println!("{points_scored}");
 
     println!("{var}");
+
+    println!("{var}");
 }
