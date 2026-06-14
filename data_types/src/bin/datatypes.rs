@@ -14,4 +14,7 @@ fn main() {
     println!("{var}");
     println!("Dear Emily, \n How are you ?");
     println!("Ankit said \"I went to stadium\"");
+
+    let filepath: &str = r"C:\My Document\new\videos";
+    println!("{filepath}");
 }
