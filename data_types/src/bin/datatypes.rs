@@ -1,4 +1,4 @@
-fn main() {
+/*fn main() {
     println!("Hello World");
 
     let var: i64 = 444443;
@@ -17,4 +17,20 @@ fn main() {
 
     let filepath: &str = r"C:\My Document\new\videos";
     println!("{filepath}");
+
+    let home: &str = "C:\\My Drive\\Functions";
+    println!("{home}");
+}
+*/
+
+fn main() {
+    let value: i32 = -15;
+    println!("{}", value.abs());
+
+    let empty_space: &str = "          my content          ";
+    println!("{}", empty_space);
+    println!("{}", empty_space.trim());
+
+    let pi: f64 = 3.14159265358979323822;
+    println!("{pi}");
 }
