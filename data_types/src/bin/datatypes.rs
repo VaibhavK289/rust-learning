@@ -31,6 +31,8 @@ fn main() {
     println!("{}", empty_space);
     println!("{}", empty_space.trim());
 
-    let pi: f64 = 3.14159265358979323822;
-    println!("{pi}");
+    let miles_away: i32 = 504;
+    let miles_away_i8: i8 = miles_away as i8;
+
+    println!("{miles_away_i8}");
 }
