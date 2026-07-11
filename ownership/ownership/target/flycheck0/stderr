@@ -1,51 +1,13 @@
     Blocking waiting for file lock on build directory
-   0.131709366s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: fingerprint error for ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership)/Check { test: false }/TargetInner { name: "copy_trait", doc: true, ..: with_path("/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", Edition2024) }
-   0.131751350s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-7248781c7b328de2/bin-copy_trait`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: <&dyn core::ops::function::Fn<(), Output = i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe as core::ops::function::FnOnce<()>>::call_once
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/core/src/ops/function.rs:287:21
-  15: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe, i32>
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:581:40
-  16: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe>
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:544:19
-  17: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe, i32>
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{closure#0}
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:581:40
-  20: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panicking.rs:544:19
-  21: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library/std/src/rt.rs:171:5
-  23: main
-  24: __libc_start_call_main
-  25: __libc_start_main@@GLIBC_2.34
-  26: <unknown>
-   0.145775354s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: stale: changed "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs"
-   0.145792377s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:           (vs) "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-750549144df8f3e8/dep-test-bin-copy_trait"
-   0.145798493s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1783708022, nanos: 954838524 } < FileTime { seconds: 1783708048, nanos: 545227662 }
-   0.145870594s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: fingerprint dirty for ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership)/Check { test: true }/TargetInner { name: "copy_trait", doc: true, ..: with_path("/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", Edition2024) }
-   0.145888491s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-750549144df8f3e8/dep-test-bin-copy_trait", reference_mtime: FileTime { seconds: 1783708022, nanos: 954838524 }, stale: "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", stale_mtime: FileTime { seconds: 1783708048, nanos: 545227662 } }))
+   0.235125152s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: stale: changed "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs"
+   0.235145984s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:           (vs) "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-7248781c7b328de2/dep-bin-copy_trait"
+   0.235152845s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1783720822, nanos: 591508787 } < FileTime { seconds: 1783793933, nanos: 397543621 }
+   0.235267964s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: fingerprint dirty for ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership)/Check { test: false }/TargetInner { name: "copy_trait", doc: true, ..: with_path("/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", Edition2024) }
+   0.235287327s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-7248781c7b328de2/dep-bin-copy_trait", reference_mtime: FileTime { seconds: 1783720822, nanos: 591508787 }, stale: "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", stale_mtime: FileTime { seconds: 1783793933, nanos: 397543621 } }))
+   0.235684222s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: stale: changed "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs"
+   0.235690891s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:           (vs) "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-750549144df8f3e8/dep-test-bin-copy_trait"
+   0.235695878s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1783720822, nanos: 591508787 } < FileTime { seconds: 1783793933, nanos: 397543621 }
+   0.235749404s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint: fingerprint dirty for ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership)/Check { test: true }/TargetInner { name: "copy_trait", doc: true, ..: with_path("/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", Edition2024) }
+   0.235761482s  INFO prepare_target{force=false package_id=ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership) target="copy_trait"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/target/debug/.fingerprint/ownership-750549144df8f3e8/dep-test-bin-copy_trait", reference_mtime: FileTime { seconds: 1783720822, nanos: 591508787 }, stale: "/home/vaibhavk/rust_learning/rust-learning/ownership/ownership/src/bin/copy_trait.rs", stale_mtime: FileTime { seconds: 1783793933, nanos: 397543621 } }))
     Checking ownership v0.1.0 (/home/vaibhavk/rust_learning/rust-learning/ownership/ownership)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.19s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
