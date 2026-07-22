@@ -14,6 +14,10 @@
 //Program will not be compiled if the ownership principle is violated.
 //
 //Owner - Entity responsible for that resource cleaning up a piece of data.
+//
+//Owner can change during the program lifecycle but only one owner at a time.
+//
+//Owner is usually a name. eg.  variable,parameter.
 
 fn main() {
     println!("Hello, world!");
