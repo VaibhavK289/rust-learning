@@ -4,4 +4,11 @@ fn main() {
     let food: &str = "pasta";
 
     // String type is completely different.
+    // We need dynamic string type whose size we can change at runtime.
+    //
+    // Mainly used for mutation operations hence stored in the heap.
+    //
+    println!("Hello");
+
+    let text: String = String::new();
 }
