@@ -11,4 +11,7 @@ fn main() {
     println!("Hello");
 
     let text: String = String::new();
+
+    // Push string method to mutate the string.
+    // Push string method is not workable for string slice or string literal.
 }
