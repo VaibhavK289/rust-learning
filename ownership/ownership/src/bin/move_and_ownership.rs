@@ -7,5 +7,15 @@
 // utilisation of heap much more effective.
 fn main() {
     let person: String = String::from("Vaibhav Kumar");
+    println!("My name is {person}");
     let genius: String = person;
+
+    // In this example, the owner of value "Vaibhav Kumar" initially was person but after we allocated
+    // it to genius variable. Its owner changed to genius since, a value can have only one owner at a
+    // time.
+    //
+    // DOuble free error - leads to memory corruption.
+
+    // Move occurs when ownership is transfered from one owner to another. A move invalidates the
+    // first owner.
 }
