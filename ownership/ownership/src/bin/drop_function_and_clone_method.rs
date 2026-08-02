@@ -12,4 +12,6 @@ fn main() {
     // Ownership model - We can Explicit states when a copy should be made.
     //
     // Clone method is a requirement of a triat called cClone.
+    // Drop function is use to clear the heap function. It cannot be used to clear the stack memory.
+    //
 }
