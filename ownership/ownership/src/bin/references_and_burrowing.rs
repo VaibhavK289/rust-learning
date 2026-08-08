@@ -7,3 +7,7 @@ fn main() {
     let my_heap_value: String = String::from("Toyota");
     let my_heap_reference: &String = &my_heap_value;
 }
+
+// Instead of storing values again and again in heap causing repeating value we create an entry in
+// heap and multiple entries containing address of it in stack memory. So that its value could be
+// retrieved even without changing ownership.
