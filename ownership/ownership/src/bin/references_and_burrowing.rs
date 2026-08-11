@@ -18,4 +18,7 @@ fn main() {
 //
 // A reference is an example of a pointer.
 // In rust a reference is guaranteed to point to a valid value. In other languages pointer is not
-// that guarantee.
+// that guarantee. References must never outlive the referent.
+//
+//
+// This is a test git push to check the status and working of the system.
