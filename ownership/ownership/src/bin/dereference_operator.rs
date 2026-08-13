@@ -4,4 +4,8 @@ fn main() {
 
     let my_heap_value: String = String::from("Toyota");
     let my_heap_reference: &String = &my_heap_value;
+
+    // Dereference means to access the data at the memory address that the reference points to.
+    println!("{}", *my_integer_reference);
+    println!("{}", my_integer_reference);
 }
