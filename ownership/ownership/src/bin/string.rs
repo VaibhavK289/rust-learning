@@ -34,3 +34,5 @@ fn main() {
 
     //push_str method can be used to push new characters in the existing string.
 }
+
+// It is embedded in binary executable.
