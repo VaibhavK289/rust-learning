@@ -36,3 +36,6 @@ fn main() {
 }
 
 // It is embedded in binary executable.
+//
+let ice_Cream
+//
