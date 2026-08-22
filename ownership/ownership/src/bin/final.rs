@@ -10,3 +10,6 @@ fn main() {}
 // in the heap. But if the data is stored in the heap and other functions using referencing then it
 // is stores its memeory address. This way it can use value of other variable without constraints of
 // ownership.
+//
+// IN rust there are three types of string in heap and stack. String function. &str used for
+// encoding directly into the binary file and string literal.
