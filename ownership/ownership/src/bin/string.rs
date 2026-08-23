@@ -39,3 +39,5 @@ fn main() {
 //
 let ice_Cream
 //
+// BInary file is in hexadecimal format.
+// We will be dealing with the reference of value.
