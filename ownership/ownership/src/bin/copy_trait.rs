@@ -10,3 +10,5 @@ fn main() {
 
     println!("The time is {time}. It is the year {year}");
 }
+
+// Notes 1
