@@ -9,6 +9,12 @@ fn main() {
     let year: i32 = time;
 
     println!("The time is {time}. It is the year {year}");
+
+    let ice_cream: &str = "COokies and Cream";
+    let dessert: &str = ice_cream;
+
+    println!("{ice_cream}");
 }
 
-// Notes 1
+// If we have a variable storing a reference and we assign that to another variable. Rust will
+// create a copy of the reference.
