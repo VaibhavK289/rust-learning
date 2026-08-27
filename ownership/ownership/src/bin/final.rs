@@ -13,3 +13,6 @@ fn main() {}
 //
 // IN rust there are three types of string in heap and stack. String function. &str used for
 // encoding directly into the binary file and string literal.
+//
+// Copy trait is not universal some datatypes have it because of being stored in stack while
+// datatypes in heap does not have copy trait.
