@@ -22,3 +22,6 @@ fn main() {
 //
 //
 // This is a test git push to check the status and working of the system.
+//
+// Rust is a middle and low level language so memory management with the help of ownership model is
+// on developer.
