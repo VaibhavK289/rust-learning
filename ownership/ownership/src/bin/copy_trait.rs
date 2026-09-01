@@ -17,4 +17,6 @@ fn main() {
 }
 
 // If we have a variable storing a reference and we assign that to another variable. Rust will
-// create a copy of the reference.
+// create a copy of the reference.ffinal.rs
+//
+// Notes
