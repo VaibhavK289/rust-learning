@@ -16,3 +16,6 @@ fn main() {
     // Drop function is use to clear the heap function. It cannot be used to clear the stack memory.
     // It is ok to use copies.
 }
+
+// Drop function can be use to clear out heap memory as well as the entry in the stack memory about
+// the reference of the heap space.
