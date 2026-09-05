@@ -8,4 +8,4 @@ fn main() {
     // age variable exists here.
 } //age variable goes out of scope here.
 //
-//
+// Scope constricts the usage of variables. Out of scope vairables does not
